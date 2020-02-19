@@ -22,6 +22,7 @@ class Feed extends Component {
   };
 
   componentDidMount() {
+
     fetch('URL')
       .then(res => {
         if (res.status !== 200) {
