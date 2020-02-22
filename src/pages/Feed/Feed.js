@@ -152,11 +152,7 @@ class Feed extends Component {
         }
         return res.json();
       })
-      .then(resData => {        
-        console.log("hi",resData);
-        console.log("am i undefined?",resData.post.creator);
-        
-        
+      .then(resData => {                
         const post = {
           _id: resData.post._id,
           title: resData.post.title,
